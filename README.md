@@ -8,3 +8,6 @@ To build the Docker image, use the following command:
 
 ```bash
 docker build -t my-converter .
+
+```wsl
+docker run -v $(pwd)/images:/app/images -v $(pwd)/output:/app/output my-converter images
